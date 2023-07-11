@@ -2,7 +2,7 @@
 using Gang_Of_Four_Eight_Design_Patterns.Behavioral_Design_Patterns.Observer_Design_Pattern;
 using Gang_Of_Four_Eight_Design_Patterns.Creational_Design_Patterns.Builder_Design_Pattern;
 using Gang_Of_Four_Eight_Design_Patterns.Creational_Design_Patterns.Singleton_Design_Pattern;
-
+using Gang_Of_Four_Eight_Design_Patterns.Behavioral_Design_Patterns.Iterator_Design_Pattern;
 // Factory Pattern Use ------------------------------------------
 /*
 CarFactory myCarFactory = new();
@@ -39,6 +39,8 @@ Console.WriteLine(myState1.TestVariable);
 Console.WriteLine(myState2.TestVariable);
 */
 
+// Observer Pattern Use -------------------------------------------
+/* 
 Publisher publisher = new Publisher("Publisher1");
 
 Subscriber Sub1 = new Subscriber("Sub1");
@@ -52,3 +54,16 @@ publisher.Subscribe(Sub3);
 publisher.Subscribe(Sub4);
 
 publisher.Notify("New event!!!");
+*/
+
+// Iterator Pattern Use --------------------------------------------
+Linked_List<int> list = new Linked_List<int>();
+
+list.Add(1);
+list.Add(2);
+list.Add(3);
+
+foreach (int val in list.Cast<int>())
+{
+    Console.WriteLine(val);
+}

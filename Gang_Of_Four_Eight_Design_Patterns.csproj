@@ -7,4 +7,8 @@
     <Nullable>disable</Nullable>
   </PropertyGroup>
 
+  <ItemGroup>
+    <Folder Include="TestData\Iterator Pattern Test Data\" />
+  </ItemGroup>
+
 </Project>
